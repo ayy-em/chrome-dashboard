@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "New Tab Dashboard",
+  "short_name": "MyDashboard",
+  "description": "A Chrome extension that turns your 'New Tab' window into your personal dashboard, with notes, calendar, weather and other stuff.",
+  "author": "github.com/ayy-em",
+  "icons": {
+    "16": "notes_ico_16.png",
+    "48": "notes_ico_48.png",
+    "128": "notes_ico_128.png"
+  },
+  "homepage_url": "https://somethingreally.fun/chrome-dashboard",
+  "version": "0.1",
+  "permissions": ["storage"],
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  }
+}
