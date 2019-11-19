@@ -1,7 +1,7 @@
 body {
   position: fixed;
   margin-left: 2rem;
-  margin-right: 3rem;
+  margin-right: 2rem;
   margin-bottom: 2rem;
   top: 0;
   bottom: 0;
@@ -44,6 +44,12 @@ body {
   border-style: dotted;
 }
 
+#weather_texty_text p {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
 #headtwo {
   grid-area: headtwo;
 }
@@ -72,12 +78,15 @@ body {
 
 main {
   height: 75vh;
+  width: 100%;
 }
 
 #mainstuffdiv {
   display: grid;
   height: 100%;
-  grid-template-columns: 10vw 70vw 10vw;
+  width: 100%;
+  margin: auto;
+  grid-template-columns: 10vw 75vw 10vw;
   grid-template-rows: auto;
   grid-template-areas:
     "middivone middivtwo middivthree";
@@ -133,7 +142,22 @@ footer {
   height: 10vh;
   line-height: 10vh;
   text-align: center;
+  font-size: 125%;
 }
+
+.a_means_link {
+  color: white;
+  text-decoration: none;
+  transition: color;
+  transition-duration: 1s;
+}
+
+.a_means_link:hover {
+  color: #9400D3;
+}
+
+
+/* i dunno this yet */
 
 @media (prefers-color-scheme: dark) {
   body {

@@ -3,19 +3,20 @@
 
 <head>
   <title>Dashboard</title>
-  <link rel="stylesheet" href="my_dashboard.css">
+  <link rel="stylesheet" href="css/my_dashboard.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <script src="js/config.js"></script>
+  <script src="js/time_date_script.js"></script>
+  <script src="js/weather_stuff.js"></script>
   <div class="container" id="headcontainer">
     <div class="topheaddiv" id="headone">
-      Weather Goes Here
+      <p id="weather_texty_text"></p>
     </div>
     <div class="topheaddiv" id="headtwo">
-      <h1 id="titletext">
-        <script src="time_date_script.js"></script>
-      </h1>
+      <h1 id="titletext"></h1>
     </div>
     <div class="topheaddiv" id="headthree">
       Calendar Here
@@ -29,7 +30,7 @@
       </div>
       <div class="middiv" id="middivtwo">
         <textarea id="textarea" placeholder="Go on..."></textarea>
-        <script src="dashboard.js"></script>
+        <script src="js/dashboard.js"></script>
       </div>
       <div class="middiv" id="middivthree">
         <p>Stuff Here, too</p>
@@ -37,7 +38,7 @@
     </div>
   </main>
   <footer>
-    Created by JM - check out %link_to_github%
+    Created by <a class="a_means_link" href="https://somethingreally.fun/">me</a> - check out <a class="a_means_link" href="https://github.com/ayy-em/chrome-dashboard">this extension's Github</a> if you want to contribute to the project.
   </footer>
 </body>
 
